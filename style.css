@@ -67,7 +67,7 @@ footer {
   width: 100%;
   height: 100%;
   text-align: center;
-  margin-top: 0.96px;
+  margin-top: 96px;
   border: var(--acd-bordertype);
   padding: var(--acd-padding-two);
 }
