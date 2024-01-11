@@ -40,7 +40,7 @@ header {
 
 main {
   position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
   border: var(--acd-bordertype);
   padding: var(--acd-padding-one);
 }
@@ -63,7 +63,7 @@ main {
 
 footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
   border: var(--acd-bordertype);
