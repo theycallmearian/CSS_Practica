@@ -7,11 +7,14 @@
 
 :root {
   /* Colors */
-  --rtc-color-1: #9ad79b;
+  --acd-color-1: #9ad79b;
   /* Background */
-  --rtc-primary-background: #000000;
+  --acd-primary-background: #000000;
   /* Border */
-  --rtc-bordertype: dashed 1px #9ad79b;
+  --acd-bordertype: dashed 1px #9ad79b;
+  /* Padding */
+  --acd-padding-one: 20px;
+  --acd-padding-two: 10px;
 }
 
 body {
@@ -20,42 +23,42 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #000000;
-  color: var(--rtc-color-1);
+  background-color: var(--acd-primary-background);
+  color: var(--acd-color-1);
 }
 
 header {
-  border-bottom: var(--rtc-bordertype);
-  padding: 20px;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  position: fixed;
-  background-color: black;
+  background-color: var(--acd-primary-background);
+  border-bottom: var(--acd-bordertype);
+  padding: var(--acd-padding-one);
   z-index: 1;
 }
 
 main {
   position: relative;
   margin-top: 100px;
-  padding: 20px;
-  border: var(--rtc-bordertype);
+  border: var(--acd-bordertype);
+  padding: var(--acd-padding-one);
 }
 
 .sidebar {
   position: absolute;
   right: 20px;
   top: 135px;
-  border: var(--rtc-bordertype);
-  padding: 20px;
+  border: var(--acd-bordertype);
+  padding: var(--acd-padding-one);
 }
 
 .features {
   position: relative;
   margin-top: 30vh;
-  padding: 10px;
   text-align: center;
-  border: var(--rtc-bordertype);
+  border: var(--acd-bordertype);
+  padding: var(--acd-padding-two);
 }
 
 footer {
@@ -63,6 +66,6 @@ footer {
   bottom: 20px;
   width: 100%;
   text-align: center;
-  border: var(--rtc-bordertype);
-  padding: 10px;
+  border: var(--acd-bordertype);
+  padding: var(--acd-padding-two);
 }
